@@ -3,11 +3,11 @@
      grid-template-columns: 4fr 1fr;
 }
 
-.content-section{
+.content{
      margin-left: 40px;
 }
 
-.content-section h1{
+.content h1{
      color: mediumslateblue;
      font-weight: 700;
 }
@@ -15,4 +15,39 @@
 .sub-hadding{
      font-weight: 600;
      font-size: 18px;
+     margin-top: 0px;
+     margin-bottom: 30px;
+}
+
+.show-card-sction{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+}
+.side-bar-section{
+     background-color: #fff;
+     padding-left: 15px;
+}
+
+.time-brack{
+     display: flex;
+     gap: 15px;
+     font-weight: 600;        
+}
+
+.Ex-time h6{
+     padding: 7px;
+}
+
+.Br-time h6{
+     padding: 7px;
+}
+
+.compleate-button{
+     padding: 15px;
+     width: 100%;
+     border: none;
+     margin-top: 20px;
+     border-radius: 2px;
+     background-color: rgb(121, 100, 243);
 }

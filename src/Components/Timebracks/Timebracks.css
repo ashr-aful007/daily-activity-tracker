@@ -1,0 +1,11 @@
+.breack-time button{
+     padding: 12px;
+     border-radius: 50% 50%;
+     background-color: #fff;
+     border: none;
+     
+}
+
+.breack-time button:hover{
+     background-color: mediumslateblue;
+}
