@@ -26,8 +26,6 @@
 }
 
 
-
-
 .side-bar-section{
      background-color: #fff;
      padding-left: 15px;
@@ -55,4 +53,31 @@
      margin-top: 20px;
      border-radius: 2px;
      background-color: rgb(121, 100, 243);
+}
+
+@media screen and (max-width:600px){
+     .show-card-sction{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 20px;
+     }
+     .content-section{
+          display: flex;
+          flex-direction: column;
+     }
+     .side-bar-section{
+          width: 50%;
+          height: auto;
+     }
+     .content h1{
+          width: 50%;
+          height: auto;
+     }
+     .time-brack{
+          display: flex;
+          flex-direction: column;
+     }
+     .content{
+          margin-left: 10px;
+     }
 }

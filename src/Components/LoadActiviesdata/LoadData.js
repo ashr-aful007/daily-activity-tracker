@@ -11,12 +11,12 @@ const LoadData = () => {
     
     let totalTime = 0;
     const activetisTimeHandle = (times) =>{       
-        const amount =  totalTime = totalTime + times;           
+        const amount = totalTime + times;           
       setShowtime(amount)  
       
-      
+     
     }
-      let total;
+      
     const barackTimehandle = (breckTime) =>{
 
      setBreacktime(breckTime)
@@ -67,7 +67,7 @@ const LoadData = () => {
                               <h6>Exercise time: {showtime}</h6>
                          </div>
                          <div className='Br-time'>
-                              <h6>Break time: {bracktime}{total}</h6>
+                              <h6>Break time: {bracktime}</h6>
                          </div>
                          <button className='compleate-button'>Activity Completed</button>
                     </div>
