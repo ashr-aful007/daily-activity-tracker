@@ -61,7 +61,7 @@ const LoadData = () => {
                               breackTime.map(time => <Timebracks timeHandle={barackTimehandle} time={time}></Timebracks>)
                          }
                     </div>
-                    <div>
+                    <div className='count-display-section'>
                          <h4>Exercise Details</h4>
                          <div className='Ex-time'>
                               <h6>Exercise time: {showtime}</h6>

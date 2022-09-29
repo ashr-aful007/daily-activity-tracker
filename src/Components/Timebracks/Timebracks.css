@@ -1,5 +1,5 @@
 .breack-time button{
-     padding: 12px;
+     padding: 10px;
      border-radius: 50% 50%;
      background-color: #fff;
      border: none;
@@ -8,4 +8,22 @@
 
 .breack-time button:hover{
      background-color: mediumslateblue;
+}
+
+@media screen and(max-width: 600px){
+     .breack-time button{
+          padding: 12px;
+          border-radius: 50% 50%;
+          background-color: #fff;
+          border: none;
+          width: 50%;
+          
+     }
+     .breack-time button{
+          padding: 5px;
+          border-radius: 50% 50%;
+          background-color: #fff;
+          border: none;
+          
+     }
 }
