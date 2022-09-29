@@ -1,0 +1,18 @@
+.content-section{
+     display: grid;
+     grid-template-columns: 4fr 1fr;
+}
+
+.content-section{
+     margin-left: 40px;
+}
+
+.content-section h1{
+     color: mediumslateblue;
+     font-weight: 700;
+}
+
+.sub-hadding{
+     font-weight: 600;
+     font-size: 18px;
+}
