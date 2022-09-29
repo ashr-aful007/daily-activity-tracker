@@ -10,14 +10,25 @@ const LoadData = () => {
     const [bracktime, setBreacktime] = useState([])
     
     let totalTime = 0;
-    const activetisTimeHandle = (times) =>{  
-      totalTime = totalTime + times;           
-      setShowtime(totalTime)   
+    const activetisTimeHandle = (times) =>{       
+        const amount =  totalTime = totalTime + times;           
+      setShowtime(amount)  
+      
+      
     }
-
+      let total;
     const barackTimehandle = (breckTime) =>{
-         setBreacktime(breckTime)
+
+     setBreacktime(breckTime)
+         localStorage.setItem('brackdata', breckTime)        
+        
     }
+    useEffect(()=>{
+          let bracktimedata = localStorage.getItem('brackdata')
+          if(bracktimedata){
+          setBreacktime(bracktimedata)
+          }
+    },[])
 
 
 
@@ -56,7 +67,7 @@ const LoadData = () => {
                               <h6>Exercise time: {showtime}</h6>
                          </div>
                          <div className='Br-time'>
-                              <h6>Break time: {bracktime}</h6>
+                              <h6>Break time: {bracktime}{total}</h6>
                          </div>
                          <button className='compleate-button'>Activity Completed</button>
                     </div>

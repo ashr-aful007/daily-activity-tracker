@@ -24,9 +24,14 @@
      grid-template-columns: repeat(3, 1fr);
      gap: 20px;
 }
+
+
+
+
 .side-bar-section{
      background-color: #fff;
      padding-left: 15px;
+     
 }
 
 .time-brack{
