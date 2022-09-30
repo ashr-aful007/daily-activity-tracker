@@ -8,13 +8,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
-const LoadData = () => {
-   
+
+const LoadData = () => { 
     const [activatis, setactivatis] = useState([])
     const [showtime,setShowtime] = useState([])
-    const [bracktime, setBreacktime] = useState([])
-    
-   
+    const [bracktime, setBreacktime] = useState([]) 
     let total = 0;
     const activetisTimeHandle = (times) =>{   
      total = total + times;   
@@ -88,17 +86,13 @@ const LoadData = () => {
                                    <h5>5.5<span>ft</span></h5>
                               </div>
                               </div>
-                  </div>
-                
-               </div>
-               
-                             
-              
+                  </div>              
+               </div>             
                <div className='content-section'>              
                <div className='show-card-sction'>
                     {
                          activatis.map(activatis => <ShowActivatis handletime={activetisTimeHandle} activatis={activatis} key={activatis.id}></ShowActivatis>)
-                    }   
+                    }                    
                     </div>                           
                <div className='side-bar-section'>
                     <h4>Add A Break</h4>
