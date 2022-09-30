@@ -25,7 +25,7 @@ const LoadData = () => {
    
   }
 
- console.log(showtime)
+ 
 
      //  console.log(showtime)
 
