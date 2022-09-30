@@ -4,12 +4,15 @@
 }
 
 .content{
-     /* margin-left: 40px; */
+     margin-left: 20px;
+     margin-right: 20px;
+     background-color: aqua;
 }
 
 .content h1{
      color: mediumslateblue;
      font-weight: 700;
+     
 }
 
 .sub-hadding{
@@ -55,6 +58,31 @@
      background-color: rgb(121, 100, 243);
 }
 
+.heading-section{
+     display: flex;
+     justify-content: space-between;
+     
+}
+
+.profile{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 3px;
+     margin-top: 20px;
+     margin-right: 120px;
+
+}
+.profile img{
+     border-radius: 50%;
+     height: 80px;
+     width: 80ppx;
+}
+
+.profile p{
+   font-weight: 600;
+   margin-left: 5px;
+}
 
 
 @media screen and (max-width:600px){
@@ -121,5 +149,9 @@
      }
      .show-card-sction{
                width: 100%;
+     }
+     .heading-section{
+          display: flex;
+          flex-direction: column;
      }
 }

@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import ShowActivatis from '../Showdata/ShowActivatis';
 import Timebracks from '../Timebracks/Timebracks';
-import './LoadData.css'
+import './LoadData.css';
+import img1 from '../../profileImg/img1.jpg';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const LoadData = () => {
@@ -44,10 +47,34 @@ const LoadData = () => {
 
      return (
           <div className='content'>
+               <div className='heading-section'>
                <div className='heading'>
                     <h1>passionate activities</h1>
                     <p className='sub-hadding'>Select today's Activities</p>
                </div>
+               <div>
+                    <div className='profile'>
+                         <div>
+                              <img src={img1} alt="loading" />                             
+                         </div>
+                         <div>
+                              <p>Yamini</p>
+                              <p><FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>Noakhali</p>
+                              <div>
+                              <div>
+                                   <p>hello</p>
+                              </div>
+                              <div>
+                                   <p>hello</p>
+                              </div>
+                              </div>
+                         </div>
+                         
+                    </div>
+
+               </div>
+               </div>
+              
                <div className='content-section'>              
                <div className='show-card-sction'>
                     {
