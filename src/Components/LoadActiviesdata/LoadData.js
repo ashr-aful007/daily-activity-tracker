@@ -5,6 +5,10 @@ import './LoadData.css';
 import img1 from '../../profileImg/img1.jpg';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import React from 'react';
+
+  import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -55,6 +59,7 @@ const LoadData = () => {
     },[])
 
   const breackTime = [10, 20, 30, 40, 50];
+  const notify = () => toast.success("congratulations!",{position: toast.POSITION.TOP_CENTER, autoClose: 4000});
 
 
      return (
@@ -110,7 +115,8 @@ const LoadData = () => {
                          <div className='Br-time'>
                               <h6>Break time: {bracktime}</h6>
                          </div>
-                         <button className='compleate-button'>Activity Completed</button>
+                         <button onClick={notify} className='compleate-button'>Activity Completed</button>
+                         <ToastContainer />
                     </div>
                </div>
           </div>
