@@ -11,11 +11,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const LoadData = () => { 
     const [activatis, setactivatis] = useState([])
-    const [showtime,setShowtime] = useState([])
+    const [showtime,setShowtime] = useState(0)
     const [bracktime, setBreacktime] = useState([]) 
-    let total = 0;
+
+    
     const activetisTimeHandle = (times) =>{   
-     total = total + times;   
+   const   total = showtime + times;   
 //      const newTime = [...showtime,times] 
 //      const sum =  newTime.reduce((accumulator, currentValue) =>{
 //         return accumulator + currentValue;
