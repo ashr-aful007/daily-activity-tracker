@@ -44,7 +44,7 @@ const LoadData = () => {
 
      return (
           <div className='content'>
-               <div>
+               <div className='heading'>
                     <h1>passionate activities</h1>
                     <p className='sub-hadding'>Select today's Activities</p>
                </div>

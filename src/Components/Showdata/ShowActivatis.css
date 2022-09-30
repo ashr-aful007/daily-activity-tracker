@@ -1,13 +1,16 @@
 .card-img-section img{
-     height: 220px;
-     width: 220px;
+     height: 350px;
+     width: 100%;
      border-radius: 2px;
 }
 
 .card-text{
      height: 190px;
-     width: 220px;
+     width: 100%;
      
+}
+::-webkit-scrollbar{
+     display: none;
 }
 
 .card-text{
@@ -34,6 +37,14 @@
           background-color: coral;
           border: none;
      
+     }
+     .card-text{
+          margin: 0;
+          padding: 0;
+     }
+     .card-section{
+          width: 90%;
+
      }
     
 }
