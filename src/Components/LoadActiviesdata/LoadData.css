@@ -77,12 +77,25 @@
      border-radius: 50%;
      height: 80px;
      width: 80ppx;
+     margin-top: 0;
 }
 
 .profile p{
    font-weight: 600;
    margin-left: 5px;
 }
+.detail-imformation{
+     display: flex;
+    
+}
+.detail-imformation h5{
+    margin-left: 20px;
+}
+detail-imformation p{
+     margin-left: 30px;
+}
+
+
 
 
 @media screen and (max-width:600px){
@@ -154,4 +167,15 @@
           display: flex;
           flex-direction: column;
      }
+     .profile{
+          display: flex;
+          justify-content: center;
+          align-items: center;  
+     }
+     .heading-section{
+          display: flex;
+          justify-content: flex-start;
+          
+     }
+
 }

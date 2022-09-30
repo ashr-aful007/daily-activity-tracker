@@ -60,20 +60,26 @@ const LoadData = () => {
                          <div>
                               <p>Yamini</p>
                               <p><FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>Noakhali</p>
-                              <div>
-                              <div>
-                                   <p>hello</p>
-                              </div>
-                              <div>
-                                   <p>hello</p>
-                              </div>
-                              </div>
+                              <div>                                                                                   
                          </div>
-                         
-                    </div>
-
+                       </div>
+                   </div>
+                   <div className='detail-imformation'>
+                              <div>
+                                  <h5>66<small>Kg</small></h5> 
+                              </div>
+                              <div>
+                                   <h5>26<small>Years</small></h5>                       
+                              </div>
+                              <div>
+                                   <h5>5.5<span>ft</span></h5>
+                              </div>
+                              </div>
+                  </div>
+                
                </div>
-               </div>
+               
+                             
               
                <div className='content-section'>              
                <div className='show-card-sction'>
