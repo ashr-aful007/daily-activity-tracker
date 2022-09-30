@@ -7,32 +7,45 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
+
 const LoadData = () => {
+   
     const [activatis, setactivatis] = useState([])
     const [showtime,setShowtime] = useState([])
     const [bracktime, setBreacktime] = useState([])
     
-    let totalTime = 0;
-    const activetisTimeHandle = (times) =>{       
-        const amount = totalTime + times;           
-      setShowtime(amount)  
-      
-     
-    }
-      
+   
+    let total = 0;
+    const activetisTimeHandle = (times) =>{   
+     total = total + times;   
+//      const newTime = [...showtime,times] 
+//      const sum =  newTime.reduce((accumulator, currentValue) =>{
+//         return accumulator + currentValue;
+//    },0)   
+     setShowtime(total)
+   
+  }
+
+ console.log(showtime)
+
+     //  console.log(showtime)
+
+
+      //breack time
     const barackTimehandle = (breckTime) =>{
 
      setBreacktime(breckTime)
          localStorage.setItem('brackdata', breckTime)        
         
     }
+
+
     useEffect(()=>{
           let bracktimedata = localStorage.getItem('brackdata')
           if(bracktimedata){
           setBreacktime(bracktimedata)
           }
     },[])
-
 
 
     useEffect(()=>{

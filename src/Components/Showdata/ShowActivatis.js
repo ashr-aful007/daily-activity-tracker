@@ -7,8 +7,6 @@ const ShowActivatis = (props) => {
      const {activatis,handletime} = props
      const {breaks,time,picture,name,about} = activatis
                
-    
-
      return (
           <div className='card-section'>     
                     <div className='card-img-section'>
